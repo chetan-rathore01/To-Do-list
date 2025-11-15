@@ -6,11 +6,13 @@ email-validator==2.3.0
 Flask==3.1.2
 gitdb==4.0.12
 GitPython==3.1.45
+gunicorn==23.0.0
 idna==3.11
 itsdangerous==2.2.0
 Jinja2==3.1.6
 MarkupSafe==3.0.3
 mymongo==0.1.1
+packaging==25.0
 pydantic==1.10.24
 pymongo==4.15.4
 querytyper==0.1.0

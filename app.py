@@ -3,7 +3,7 @@ from pymongo import MongoClient
 
 app = Flask(__name__)
 
-# Connect to MongoDB (Local or Atlas)
+
 client = MongoClient("mongodb://localhost:27017/")
 db = client["todo_db"]
 todos = db["todos"]
@@ -11,7 +11,7 @@ todos = db["todos"]
 
 @app.route('/')
 def index():
-    all_todos = todos.find()   # Fetch all tasks
+    all_todos = todos.find()   
     return render_template('index.html', todos=all_todos)
 
 @app.route('/add', methods=['POST'])
